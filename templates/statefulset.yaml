@@ -33,7 +33,7 @@ spec:
                 export AMF_BIND_ADDR=$(ip addr show $AMF_BIND_INTERFACE | grep -Po 'inet \K[\d.]+');
             fi ;\
             envsubst < /gnb_zmq.yaml > gnb.yml ;\
-            /opt/srsRAN_Project/target/bin/gnb -c gnb.yml || sleep infinity
+            /opt/srsRAN_Project/target/bin/gnb -c gnb.yml
         env:
         - name: AMF_HOSTNAME
           value: {{ .Values.gnb.amf | quote }}
