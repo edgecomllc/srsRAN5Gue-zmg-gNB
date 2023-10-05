@@ -11,7 +11,7 @@ icon: https://docs.srsran.com/en/latest/_static/logo.png
 maintainers:
 - email: 
   name: PapaySail
-name: srsRAN5Gue-zmq-gNB
+name: srsran5gue-zmq-gnb
 version: 0.1.3
 keywords:
   - 5G
